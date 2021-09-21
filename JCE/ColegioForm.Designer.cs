@@ -259,7 +259,7 @@ namespace JCE
             this.groupBox2.ForeColor = System.Drawing.Color.DarkGray;
             this.groupBox2.Location = new System.Drawing.Point(459, 64);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(319, 374);
+            this.groupBox2.Size = new System.Drawing.Size(309, 374);
             this.groupBox2.TabIndex = 77;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Colegio";

@@ -205,6 +205,9 @@
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MunicipioForm.resx">
+      <DependentUpon>MunicipioForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -214,6 +217,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ProvinciaForm.resx">
+      <DependentUpon>ProvinciaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SectorForm.resx">
       <DependentUpon>SectorForm.cs</DependentUpon>
     </EmbeddedResource>

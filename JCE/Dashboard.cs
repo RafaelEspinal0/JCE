@@ -87,6 +87,7 @@ namespace JCE
         private void btnMMun_Click(object sender, EventArgs e)
         {
             subMant.Visible = false;
+            abrirForm(new MunicipioForm());
         }
 
         private void btnMPais_Click(object sender, EventArgs e)
@@ -102,6 +103,7 @@ namespace JCE
         private void btnMPro_Click(object sender, EventArgs e)
         {
             subMant.Visible = false;
+            abrirForm(new MunicipioForm());
         }
 
         private void btnMSec_Click(object sender, EventArgs e)
