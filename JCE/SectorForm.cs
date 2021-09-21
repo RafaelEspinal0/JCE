@@ -12,9 +12,17 @@ namespace JCE
 {
     public partial class SectorForm : Form
     {
+        JCEEntities1 db = new JCEEntities1();
         public SectorForm()
         {
             InitializeComponent();
+            getSector();
+        }
+
+        void getSector()
+        {
+            var sectores = db.sector.ToList();
+            dgvSector.DataSource = sectores.ToList();
         }
     }
 }

@@ -32,13 +32,13 @@ namespace JCE
             this.button1 = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEditCed = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvSector = new System.Windows.Forms.DataGridView();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSector)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -89,13 +89,13 @@ namespace JCE
             this.btnEditCed.Text = "Editar";
             this.btnEditCed.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dgvSector
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(215, 240);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(312, 177);
-            this.dataGridView1.TabIndex = 76;
+            this.dgvSector.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSector.Location = new System.Drawing.Point(182, 255);
+            this.dgvSector.Name = "dgvSector";
+            this.dgvSector.Size = new System.Drawing.Size(385, 177);
+            this.dgvSector.TabIndex = 76;
             // 
             // textBox6
             // 
@@ -160,13 +160,13 @@ namespace JCE
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEditCed);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvSector);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SectorForm";
             this.Text = "SectorForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSector)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,7 +177,7 @@ namespace JCE
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEditCed;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvSector;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;

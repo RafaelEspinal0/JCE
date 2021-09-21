@@ -42,11 +42,11 @@ namespace JCE
             this.label3 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvUser = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEditCed = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -170,13 +170,13 @@ namespace JCE
             this.label4.TabIndex = 51;
             this.label4.Text = "Email";
             // 
-            // dataGridView1
+            // dgvUser
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(53, 246);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(681, 170);
-            this.dataGridView1.TabIndex = 53;
+            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUser.Location = new System.Drawing.Point(53, 246);
+            this.dgvUser.Name = "dgvUser";
+            this.dgvUser.Size = new System.Drawing.Size(681, 170);
+            this.dgvUser.TabIndex = 53;
             // 
             // btnDelete
             // 
@@ -235,7 +235,7 @@ namespace JCE
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEditCed);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvUser);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -252,7 +252,7 @@ namespace JCE
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserForm";
             this.Text = "UserForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,7 +272,7 @@ namespace JCE
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvUser;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEditCed;
         private System.Windows.Forms.Button button1;

@@ -34,20 +34,20 @@ namespace JCE
             this.button3 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvOcup = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEditCed = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvNac = new System.Windows.Forms.DataGridView();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOcup)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNac)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -56,7 +56,7 @@ namespace JCE
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.dataGridView2);
+            this.groupBox2.Controls.Add(this.dgvOcup);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.DarkGray;
@@ -123,13 +123,13 @@ namespace JCE
             this.button4.Text = "Editar";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // dgvOcup
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(32, 179);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(291, 177);
-            this.dataGridView2.TabIndex = 80;
+            this.dgvOcup.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvOcup.Location = new System.Drawing.Point(32, 179);
+            this.dgvOcup.Name = "dgvOcup";
+            this.dgvOcup.Size = new System.Drawing.Size(291, 177);
+            this.dgvOcup.TabIndex = 80;
             // 
             // label5
             // 
@@ -147,7 +147,7 @@ namespace JCE
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.btnDelete);
             this.groupBox1.Controls.Add(this.btnEditCed);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dgvNac);
             this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -207,13 +207,13 @@ namespace JCE
             this.btnEditCed.Text = "Editar";
             this.btnEditCed.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dgvNac
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 177);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(312, 177);
-            this.dataGridView1.TabIndex = 76;
+            this.dgvNac.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNac.Location = new System.Drawing.Point(21, 177);
+            this.dgvNac.Name = "dgvNac";
+            this.dgvNac.Size = new System.Drawing.Size(312, 177);
+            this.dgvNac.TabIndex = 76;
             // 
             // textBox6
             // 
@@ -259,10 +259,10 @@ namespace JCE
             this.Text = "NacionalidadForm";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOcup)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNac)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,13 +275,13 @@ namespace JCE
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvOcup;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEditCed;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvNac;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;

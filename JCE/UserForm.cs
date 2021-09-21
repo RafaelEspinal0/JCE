@@ -12,9 +12,17 @@ namespace JCE
 {
     public partial class UserForm : Form
     {
+        JCEEntities1 db = new JCEEntities1();
         public UserForm()
         {
             InitializeComponent();
+            getUsuarios();
+        }
+
+        void getUsuarios()
+        {
+            var usuarios = db.Users.ToList();
+            dgvUser.DataSource = usuarios.ToList();
         }
     }
 }
