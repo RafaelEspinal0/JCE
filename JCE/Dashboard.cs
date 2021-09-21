@@ -93,11 +93,13 @@ namespace JCE
         private void btnMPais_Click(object sender, EventArgs e)
         {
             subMant.Visible = false;
+            abrirForm(new NacionalidadForm());
         }
 
         private void btnMOcu_Click(object sender, EventArgs e)
         {
             subMant.Visible = false;
+            abrirForm(new NacionalidadForm());
         }
 
         private void btnMPro_Click(object sender, EventArgs e)
@@ -109,6 +111,7 @@ namespace JCE
         private void btnMSec_Click(object sender, EventArgs e)
         {
             subMant.Visible = false;
+            abrirForm(new SectorForm());
         }
     }
 }
