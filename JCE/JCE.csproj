@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13B8F907-0572-4E23-B8E5-1CD5994AB68B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JCE</RootNamespace>
+    <AssemblyName>JCE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="agrCedulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agrCedulas.Designer.cs">
+      <DependentUpon>agrCedulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cedula.cs">
+      <DependentUpon>JCEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cedulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cedulas.Designer.cs">
+      <DependentUpon>cedulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colegio.cs">
+      <DependentUpon>JCEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ColegioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColegioForm.Designer.cs">
+      <DependentUpon>ColegioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio.Designer.cs">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JCE.cs">
+      <DependentUpon>JCE.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="JCE.Designer.cs">
+      <DependentUpon>JCE.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="JCEModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCEModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JCEModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JCEModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCEModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="municipio.cs">
+      <DependentUpon>JCEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MunicipioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MunicipioForm.Designer.cs">
+      <DependentUpon>MunicipioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nacionalidad.cs">
+      <DependentUpon>JCEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NacionalidadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NacionalidadForm.Designer.cs">
+      <DependentUpon>NacionalidadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ocupacion.cs">
+      <DependentUpon>JCEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OcupacionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OcupacionForm.Designer.cs">
+      <DependentUpon>OcupacionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="provincia.cs">
+      <DependentUpon>JCEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProvinciaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvinciaForm.Designer.cs">
+      <DependentUpon>ProvinciaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="recinto.cs">
+      <DependentUpon>JCEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sector.cs">
+      <DependentUpon>JCEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorForm.Designer.cs">
+      <DependentUpon>SectorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sp_get_cedulas_Result.cs">
+      <DependentUpon>JCEModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <DependentUpon>JCEModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="agrCedulas.resx">
+      <DependentUpon>agrCedulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cedulas.resx">
+      <DependentUpon>cedulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColegioForm.resx">
+      <DependentUpon>ColegioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SectorForm.resx">
+      <DependentUpon>SectorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="JCE.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>JCE.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="JCEModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>JCEModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="JCEModel.edmx.diagram">
+      <DependentUpon>JCEModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\logo_2014.png" />
+    <Content Include="Assets\multiplicar.png" />
+    <Content Include="Assets\restar.png" />
+    <Content Include="JCE.tt">
+      <DependentUpon>JCE.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>JCE.cs</LastGenOutput>
+    </Content>
+    <Content Include="JCEModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JCEModel.edmx</DependentUpon>
+      <LastGenOutput>JCEModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="JCEModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JCEModel.edmx</DependentUpon>
+      <LastGenOutput>JCEModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
