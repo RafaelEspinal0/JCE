@@ -12,7 +12,7 @@ namespace JCE
 {
     public partial class UserForm : Form
     {
-        JCEEntities1 db = new JCEEntities1();
+        JCEEntities2 db = new JCEEntities2();
         public UserForm()
         {
             InitializeComponent();

@@ -12,17 +12,28 @@ namespace JCE
 {
     public partial class SectorForm : Form
     {
-        JCEEntities1 db = new JCEEntities1();
+        JCEEntities2 db = new JCEEntities2();
         public SectorForm()
         {
             InitializeComponent();
             getSector();
+            GetCombos();
         }
 
         void getSector()
         {
-            var sectores = db.sector.ToList();
+            var sectores = db.sectors.ToList();
             dgvSector.DataSource = sectores.ToList();
+        }
+
+        void GetCombos()
+        {
+            var municipio = db.municipios.ToList();
+            cbMunicipio.ValueMember = "id";
+            cbMunicipio.DisplayMember = "nombre";
+            cbMunicipio.DataSource = municipio;
+
+
         }
     }
 }

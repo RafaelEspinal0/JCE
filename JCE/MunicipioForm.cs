@@ -12,22 +12,32 @@ namespace JCE
 {
     public partial class MunicipioForm : Form
     {
-        JCEEntities1 db = new JCEEntities1();
+        JCEEntities2 db = new JCEEntities2();
         public MunicipioForm()
         {
             InitializeComponent();
             GetProvincias();
             GetMunicipios();
+            GetCombos();
         }
         void GetProvincias()
         {
-            var provincias = db.provincia.ToList();
+            var provincias = db.provincias.ToList();
             dgvProv.DataSource = provincias.ToList();
         }
         void GetMunicipios()
         {
-            var municipios = db.municipio.ToList();
+            var municipios = db.municipios.ToList();
             dgvMun.DataSource = municipios.ToList();
+        }
+        void GetCombos()
+        {
+            var provincia = db.provincias.ToList();
+            cbProvincia.ValueMember = "id";
+            cbProvincia.DisplayMember = "nombre";
+            cbProvincia.DataSource = provincia;
+
+
         }
     }
 }

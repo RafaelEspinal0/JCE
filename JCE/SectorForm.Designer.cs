@@ -37,7 +37,7 @@ namespace JCE
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbMunicipio = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSector)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,9 +50,10 @@ namespace JCE
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(240, 194);
+            this.button1.Location = new System.Drawing.Point(640, 463);
+            this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 30);
+            this.button1.Size = new System.Drawing.Size(211, 72);
             this.button1.TabIndex = 79;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = false;
@@ -66,9 +67,10 @@ namespace JCE
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(363, 194);
+            this.btnDelete.Location = new System.Drawing.Point(968, 463);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(79, 30);
+            this.btnDelete.Size = new System.Drawing.Size(211, 72);
             this.btnDelete.TabIndex = 78;
             this.btnDelete.Text = "Eliminar";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -82,9 +84,10 @@ namespace JCE
             this.btnEditCed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditCed.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditCed.ForeColor = System.Drawing.Color.White;
-            this.btnEditCed.Location = new System.Drawing.Point(448, 194);
+            this.btnEditCed.Location = new System.Drawing.Point(1195, 463);
+            this.btnEditCed.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnEditCed.Name = "btnEditCed";
-            this.btnEditCed.Size = new System.Drawing.Size(79, 30);
+            this.btnEditCed.Size = new System.Drawing.Size(211, 72);
             this.btnEditCed.TabIndex = 77;
             this.btnEditCed.Text = "Editar";
             this.btnEditCed.UseVisualStyleBackColor = false;
@@ -92,17 +95,20 @@ namespace JCE
             // dgvSector
             // 
             this.dgvSector.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSector.Location = new System.Drawing.Point(182, 255);
+            this.dgvSector.Location = new System.Drawing.Point(485, 608);
+            this.dgvSector.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.dgvSector.Name = "dgvSector";
-            this.dgvSector.Size = new System.Drawing.Size(385, 177);
+            this.dgvSector.RowHeadersWidth = 102;
+            this.dgvSector.Size = new System.Drawing.Size(1027, 422);
             this.dgvSector.TabIndex = 76;
             // 
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(223, 128);
+            this.textBox6.Location = new System.Drawing.Point(595, 305);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(96, 26);
+            this.textBox6.Size = new System.Drawing.Size(249, 54);
             this.textBox6.TabIndex = 63;
             // 
             // label8
@@ -110,9 +116,10 @@ namespace JCE
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkGray;
-            this.label8.Location = new System.Drawing.Point(220, 107);
+            this.label8.Location = new System.Drawing.Point(587, 255);
+            this.label8.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 18);
+            this.label8.Size = new System.Drawing.Size(94, 48);
             this.label8.TabIndex = 66;
             this.label8.Text = "Sector";
             // 
@@ -121,9 +128,10 @@ namespace JCE
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Dubai", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(329, 11);
+            this.label1.Location = new System.Drawing.Point(877, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 54);
+            this.label1.Size = new System.Drawing.Size(271, 135);
             this.label1.TabIndex = 83;
             this.label1.Text = "Sector";
             // 
@@ -132,30 +140,32 @@ namespace JCE
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(360, 107);
+            this.label3.Location = new System.Drawing.Point(960, 255);
+            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 18);
+            this.label3.Size = new System.Drawing.Size(154, 48);
             this.label3.TabIndex = 85;
             this.label3.Text = "Pertenece a";
             // 
-            // comboBox1
+            // cbMunicipio
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(363, 128);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(96, 26);
-            this.comboBox1.TabIndex = 84;
+            this.cbMunicipio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMunicipio.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMunicipio.FormattingEnabled = true;
+            this.cbMunicipio.Location = new System.Drawing.Point(968, 305);
+            this.cbMunicipio.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.cbMunicipio.Name = "cbMunicipio";
+            this.cbMunicipio.Size = new System.Drawing.Size(249, 53);
+            this.cbMunicipio.TabIndex = 84;
             // 
             // SectorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(27)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(780, 511);
+            this.ClientSize = new System.Drawing.Size(2080, 1219);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbMunicipio);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label1);
@@ -164,6 +174,7 @@ namespace JCE
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "SectorForm";
             this.Text = "SectorForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvSector)).EndInit();
@@ -182,6 +193,6 @@ namespace JCE
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbMunicipio;
     }
 }

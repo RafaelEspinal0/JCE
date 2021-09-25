@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b6c190edd25f4c719f0b55c80a7cee5b" Name="Diagram1" ZoomLevel="77">
+        <EntityTypeShape EntityType="JCEModel1.cedula" Width="1.5" PointX="12" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JCEModel1.Colegio" Width="1.5" PointX="9.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JCEModel1.municipio" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JCEModel1.nacionalidad" Width="1.5" PointX="9.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JCEModel1.ocupacion" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JCEModel1.provincia" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JCEModel1.recinto" Width="1.5" PointX="7.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JCEModel1.sector" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JCEModel1.User" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <AssociationConnector Association="JCEModel1.FK_colegio_id" ManuallyRouted="false" />
+        <AssociationConnector Association="JCEModel1.FK_nacionalidad_id" ManuallyRouted="false" />
+        <AssociationConnector Association="JCEModel1.FK_ocupacion_id" ManuallyRouted="false" />
+        <AssociationConnector Association="JCEModel1.FK_recinto_id" ManuallyRouted="false" />
+        <AssociationConnector Association="JCEModel1.FK_municipio_id" ManuallyRouted="false" />
+        <AssociationConnector Association="JCEModel1.FK_provincia_id" ManuallyRouted="false" />
+        <AssociationConnector Association="JCEModel1.FK_sector_id" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

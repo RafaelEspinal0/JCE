@@ -59,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cedula.cs">
-      <DependentUpon>JCEModel.tt</DependentUpon>
+      <DependentUpon>JCEModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="cedulas.cs">
       <SubType>Form</SubType>
@@ -68,7 +68,7 @@
       <DependentUpon>cedulas.cs</DependentUpon>
     </Compile>
     <Compile Include="Colegio.cs">
-      <DependentUpon>JCEModel.tt</DependentUpon>
+      <DependentUpon>JCEModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="ColegioForm.cs">
       <SubType>Form</SubType>
@@ -119,8 +119,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>JCEModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="JCEModel1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCEModel1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JCEModel1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCEModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JCEModel1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCEModel1.edmx</DependentUpon>
+    </Compile>
     <Compile Include="municipio.cs">
-      <DependentUpon>JCEModel.tt</DependentUpon>
+      <DependentUpon>JCEModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="MunicipioForm.cs">
       <SubType>Form</SubType>
@@ -129,7 +144,7 @@
       <DependentUpon>MunicipioForm.cs</DependentUpon>
     </Compile>
     <Compile Include="nacionalidad.cs">
-      <DependentUpon>JCEModel.tt</DependentUpon>
+      <DependentUpon>JCEModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="NacionalidadForm.cs">
       <SubType>Form</SubType>
@@ -138,18 +153,18 @@
       <DependentUpon>NacionalidadForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ocupacion.cs">
-      <DependentUpon>JCEModel.tt</DependentUpon>
+      <DependentUpon>JCEModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="provincia.cs">
-      <DependentUpon>JCEModel.tt</DependentUpon>
+      <DependentUpon>JCEModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="recinto.cs">
-      <DependentUpon>JCEModel.tt</DependentUpon>
+      <DependentUpon>JCEModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="sector.cs">
-      <DependentUpon>JCEModel.tt</DependentUpon>
+      <DependentUpon>JCEModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="SectorForm.cs">
       <SubType>Form</SubType>
@@ -158,7 +173,10 @@
       <DependentUpon>SectorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="sp_get_cedulas_Result.cs">
-      <DependentUpon>JCEModel.tt</DependentUpon>
+      <DependentUpon>JCEModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>JCEModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="UserForm.cs">
       <SubType>Form</SubType>
@@ -216,6 +234,13 @@
     <None Include="JCEModel.edmx.diagram">
       <DependentUpon>JCEModel.edmx</DependentUpon>
     </None>
+    <EntityDeploy Include="JCEModel1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>JCEModel1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="JCEModel1.edmx.diagram">
+      <DependentUpon>JCEModel1.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -248,6 +273,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>JCEModel.edmx</DependentUpon>
       <LastGenOutput>JCEModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="JCEModel1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JCEModel1.edmx</DependentUpon>
+      <LastGenOutput>JCEModel1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="JCEModel1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JCEModel1.edmx</DependentUpon>
+      <LastGenOutput>JCEModel1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -12,12 +12,13 @@ namespace JCE
 {
     public partial class ColegioForm : Form
     {
-        JCEEntities1 db = new JCEEntities1();
+        JCEEntities2 db = new JCEEntities2();
         public ColegioForm()
         {
             InitializeComponent();
             GetRecintos();
             GetColegios();
+            GetCombos();
         }
 
 
@@ -27,13 +28,26 @@ namespace JCE
         }
         void GetRecintos()
         {
-            var recinto = db.recinto.ToList();
+            var recinto = db.recintoes.ToList();
             dgvRecinto.DataSource = recinto.ToList();
         }
         void GetColegios()
         {
-            var colegios = db.recinto.ToList();
+            var colegios = db.Colegios.ToList();
             dgvColegio.DataSource = colegios.ToList();
+        }
+        void GetCombos()
+        {
+            var sector = db.sectors.ToList();
+            cbSector.ValueMember = "id";
+            cbSector.DisplayMember = "nombre";
+            cbSector.DataSource = sector;
+
+            var recinto = db.recintoes.ToList();
+            cbRecinto.ValueMember = "id";
+            cbRecinto.DisplayMember = "nombre";
+            cbRecinto.DataSource = recinto;
+
         }
     }
 }

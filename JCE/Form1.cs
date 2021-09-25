@@ -13,7 +13,7 @@ namespace JCE
 {
     public partial class Form1 : Form
     {
-        JCEEntities1 db = new JCEEntities1();
+        JCEEntities2 db = new JCEEntities2();
         public Form1()
         {
             InitializeComponent();
